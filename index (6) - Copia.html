@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Il Mio Berlingo — Gestione Furgone</title>
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIklsIE1pbyBCZXJsaW5nbyAtIEdlc3Rpb25lIEZ1cmdvbmUiLCAic2hvcnRfbmFtZSI6ICJJbCBNaW8gQmVybGluZ28iLCAic3RhcnRfdXJsIjogIi4vaW5kZXguaHRtbCIsICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLCAiYmFja2dyb3VuZF9jb2xvciI6ICIjRjNGMUVBIiwgInRoZW1lX2NvbG9yIjogIiMyQzRBNUUiLCAiaWNvbnMiOiBbeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFNQUFBQURBQ0FZQUFBQlMzR3dIQUFBRkYwbEVRVlI0bk8zZHpYWFRXaGlHVVRucmxrTUR0RUFIVEtpQ01xZ2lFenBJQ3pTUWZtQndsMWtHL0NOWjUxZnYzdVBnbUtQdjBaRnNKemt0Zy9udzZjdlAzcytCZXQ3ZlhrKzluOE9scmsvR3NMTXNmYU5vL28wTlBmZTBqcUhaTnpQNGJORXFoT3JmeE9DelIrMFFxajI0d2Fla1dpRVVmMUNEVDAybFEzZ3ArV0NHbjlwS3oxaVJtZ3crUFpUWURYYnZBSWFmWGtyTTNxNEFERCs5N1ozQnB3TXcvSXhpenl3K0ZZRGhaelRQenVUbUFBdy9vM3BtTmpjRllQZ1ozZFlaWFIyQTRXY1dXMloxVlFDR245bXNuZG1IQVJoK1pyVm1kb3QrRkFKbWN6Y0FaMzltOTJpR2J3WmcrRG1LZTdQc0VvaG9Wd053OXVkb2JzMjBIWUJvL3dUZzdNOVJYWnR0T3dEUi9nakEyWitqKzN2RzdRQkUreDJBc3o4cExtZmREa0EwQVJEdFpWbGMvcERuUFBOMkFLSUpnR2dDSUpvQWlIWnlBMHd5T3dEUkJFQTBBUkJOQUVRVEFORUVRRFFCRUUwQVJCTUEwUVJBTkFFUVRRQkVFd0RSQkVBMEFSQk5BRVFUQU5FRVFEUUJFRTBBUkJNQTBRUkFOQUVRVFFCRUV3RFJCRUEwQVJCTkFFUVRBTkVFUURRQkVFMEFSQk1BMFFSQU5BRVFUUUJFRXdEUkJFQTBBUkJOQUVUN3I5WUQvL2orcmRaRHM5UEh6MStySEorUG43OFdmOHphcXZ5bGVNT2ZiYVlRaWw4Q0dYNW1tb0dpQWN6MEg2ZXVXV2JCVFREVnpCQ0JBS2hxOUFnRVFIVWpSeUFBbWhnMWdtcnZBMXd6MDh0alIvRm84RW9jazdYRC9lUDd0K0Ztd0E3QWJsdUdlclNkUUFBVU1Xc0VBcUNZR1NNUUFFWE5Gb0VBS0c2bUNBUkFGYk5FSUFDcW1TRUNBVkRWNkJFSWdPcEdqa0FBTkRGcUJBS2dtUkVqRUFCTmpSYUJBR2h1cEFnRVFCZWpSQ0FBdWhraEFnSFFWZThJQkVCM1BYOUlSZ0FNWVcwRXBYY0JBVENNSGp1QkFCaEs2d2dFUURRQkVFMEFSQk1BMFFSQU5BRVFUUUJFYS9xN1FXdHE4VHN3UjlmN1Y0ek1hT29BdGh6d3k2ODlVZ3lHZnA4cEE5aDcwTS8vZnVZUURINFpVd1ZRK3FEUEdJSTFLR3VhbStDYVo3eFp6cWJXb0x3cEFtaHhjRVlmQUd0UXgvQUJ0RHdvb3c2QU5haW42VDNBRElzN3czT3NiY1EvWlZUTDhEc0ExQ1FBcmtyWkNVOGZQbjM1dWZhTFV4YUZ1VzI1ZkxNREVFMEFSQk1BMFFSQU5BRVFUUUJFRXdEUk5yMFAwRUxybit3YThTZkpyRUU3ZGdDaUNZQm8wd1ZROHVNWXMzNjB3eHFVTTF3QUkxMXY5bm91MXFDZDRRSllvOFJaYS9Zem56VW9ZOGdBMXB4MTloeThOZisyOTVuUEdyUXhaQUJyUFRNQVJ6dnJXWU45aG5zZjROTFdBM1hyakZYcWNYcXdCblZOOVh1QkhuRm1zd1piRFgwSjFPTXNOTnFaenhyVU5YUUF5OUwyWUl4NjRLMUJQY01Ic0N4dERzcm9COTRhMURGRkFNdFM5K0RNY3VDdFFYbER2d3AwUzZrYnZaa1B1alVvWThvQXpwNGRnaU1kZEd1d3o5UUJYRXIrVFB1Wk5kanVNQUhBTTZhNUNZWWFCRUEwQVJCTkFFUVRBTkVFUURRQkVPM2wvZTMxMVB0SlFBL3ZiNjhuT3dEUkJFQTBBUkJOQUVSN1daYi9id1o2UHhGbzZUenpkZ0NpQ1lCb3Z3TndHVVNLeTFtM0F4RHRqd0RzQWh6ZDN6TnVCeURhUHdIWUJUaXFhN050QnlEYTFRRHNBaHpOclptMkF4RHRaZ0IyQVk3aTNpemYzUUZFd093ZXpiQkxJS0k5RE1BdXdLeld6TzZxSFVBRXpHYnR6SzYrQkJJQnM5Z3lxNXZ1QVVUQTZMYk82T2FiWUJFd3FtZG04NmxYZ1VUQWFKNmR5YWRmQmhVQm85Z3ppN3ZlQnhBQnZlMmR3ZDF2aEltQVhrck1YdEhoOWZmR2FLSGtTYmZvUnlIc0J0Uldlc2FxRGF6ZGdKSnFuVnlybjdHRndCNjFyeXFhWGJJSWdTMWFYVTQzdjJZWEF2ZTB2by9zZXRNcUJwYWw3NHNudzcxcUk0cGpHKzJWd2w5RUQ5alBhRTJRRndBQUFBQkpSVTVFcmtKZ2dnPT0iLCAic2l6ZXMiOiAiMTkyeDE5MiIsICJ0eXBlIjogImltYWdlL3BuZyIsICJwdXJwb3NlIjogImFueSBtYXNrYWJsZSJ9LCB7InNyYyI6ICJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQWdBQUFBSUFDQVlBQUFEMGVOVDZBQUFRVGtsRVFWUjRuTzNkd1pVVFJ4U0cwUjRPNFpBQUtaQUJHNklnREtMd2hneWNBZ21RRDE3TUVkYUFScU9XdXFwZTFYL3YzblozZGJ2ZXA1S01uelpLK3ZEcHk2L1Ixd0J3aEovLy92TTAraHI0bTRjeWlBRVA4RXdnakdIUk96RHNBZllSQmUxWjRBWU1mSUJqQ1lMaldkQURHUGdBZlFtQ3gxbkFPeG42QURXSWdmdFl0QjBNZllEYXhNRHRMTlFiREgyQU9ZbUI2eXpPS3d4K2dEVUlnY3NzeWhsREgyQnRZdUIvRm1JeitBSFNDSUh3QURENEFiSWxoMERralJ2OEFKeExESUdvR3piNEFiZ21LUVFpYnRUZ0IyQ1BoQkI0Ti9vQ1dqUDhBZGdyWVhZc1d6Z0pEdytBOWxZOURWanVwZ3grQUZwWUxRU1crZ3JBOEFlZ2xkVm16QkkxczlwREFhQzJGVTREcGo4Qk1Qd0I2RzJGMlROMUFLendBQUNZMCt3emFNb2pqTmtYSFlDMXpQaVZ3SFFuQUlZL0FOWE1PSnVtQ29BWkZ4aUFETFBOcUNtT0xHWmJWQUN5emZDVlFQa1RBTU1mZ05uTU1MdEtCOEFNQ3dnQWwxU2ZZV1VEb1ByQ0FjQmJLcyt5a2dGUWVjRUFZSStxTTYxY0FGUmRLQUM0VjhYWlZpb0FLaTRRQUJ5aDJvd3JFd0RWRmdZQWpsWnAxcFVJZ0VvTEFnQXRWWmw1d3dPZ3lrSUFRQzhWWnQvUUFLaXdBQUF3d3VnWk9Dd0FSdDg0QUl3MmNoWU9DUURESHdDZWpacUozUVBBOEFlQWwwYk14cTRCWVBnRHdHVzlaMlMzQUREOEFlQzZuck95U3dBWS9nQndtMTR6Yy9pZkF3QUE5TmM4QUh6NkI0Qjllc3pPcGdGZytBUEFmVnJQMEdZQllQZ0R3R05hemxLL0FRQ0FRRTBDd0tkL0FEaEdxNWw2ZUFBWS9nQndyQmF6OWRBQU1Qd0JvSTJqWjZ6ZkFBQkFvTU1Dd0tkL0FHanJ5Rmw3U0FBWS9nRFF4MUV6MTFjQUFCRG80UUR3NlI4QStqcGk5am9CQUlCQUR3V0FULzhBTU1hak0vanVBREQ4QVdDc1IyYXhyd0FBSU5CZEFlRFRQd0RVY085TWRnSUFBSUYyQjRCUC93QlF5ejJ6MlFrQUFBVGFGUUErL1FOQVRYdG50Qk1BQUFoMGN3RDQ5QThBdGUyWjFVNEFBQ0RRVFFIZzB6OEF6T0hXbWUwRUFBQUNDUUFBQ1BSbUFEaitCNEM1M0RLN25RQUFRS0NyQWVEVFB3RE02YTBaN2dRQUFBSUpBQUFJOUdvQU9QNEhnTGxkbStWT0FBQWdrQUFBZ0VBWEE4RHhQd0NzNGJXWjdnUUFBQUlKQUFBSTlGY0FPUDRIZ0xWY211MU9BQUFna0FBQWdFQUNBQUFDdlFnQTMvOER3SnIrblBGT0FBQWdrQUFBZ0VBQ0FBQUMvUTRBMy84RHdOck9aNzBUQUFBSUpBQUFJSkFBQUlCQUFnQUFBcjNiTmo4QUJJQVVwNW52QkFBQUFna0FBQWdrQUFBZ2tBQUFnRUFDQUFBQ0NRQUFDQ1FBQUNEUWt6OERBQUR5T0FFQWdFQUNBQUFDQ1FBQUNDUUFBQ0NRQUFDQVFBSUFBQUlKQUFBSUpBQUFJSkFBQUlCQUFnQUFBZ2tBQUFna0FBQWdrQUFBZ0VBQ0FBQUNDUUFBQ0NRQUFDQ1FBQUNBUUFJQUFBSUpBQUFJSkFBQUlKQUFBSUJBQWdBQUFna0FBQWdrQUFBZ2tBQUFnRUFDQUFBQ0NRQUFDQ1FBQUNDUUFBQ0FRQUlBQUFJSkFBQUlKQUFBSUpBQUFJQkFBZ0FBQWdrQUFBZ2tBQUFna0FBQWdFQUNBQUFDQ1FBQUNDUUFBQ0NRQUFDQVFBSUFBQUlKQUFBSUpBQUFJSkFBQUlCQUFnQUFBZ2tBQUFna0FBQWdrQUFBZ0VBQ0FBQUNDUUFBQ0NRQUFDQ1FBQUNBUUFJQUFBSUpBQUFJSkFBQUlKQUFBSUJBQWdBQUFna0FBQWdrQUFBZ2tBQUFnRUFDQUFBQ0NRQUFDQ1FBQUNDUUFBQ0FRQUlBQUFJSkFBQUlKQUFBSUpBQUFJQkFBZ0FBQWdrQUFBZ2tBQUFna0FBQWdFQUNBQUFDQ1FBQUNDUUFBQ0NRQUFDQVFBSUFBQUlKQUFBSUpBQUFJSkFBQUlCQUFnQUFBZ2tBQUFna0FBQWdrQUFBZ0VBQ0FBQUNDUUFBQ0NRQUFDQ1FBQUNBUUFJQUFBSUpBQUFJSkFBQUlKQUFBSUJBQWdBQUFna0FBQWdrQUFBZ2tBQUFnRUFDQUFBQ0NRQUFDQ1FBQUNDUUFBQ0FRTzlIWHdEQXpINTgvemI2RXByNStQbnI2RXVnb2VnQVdQbGZYT0F4aHQvL2U2UzFXTlBUaDA5ZmZvMitpSjRNZldDdmF3TXdhVThSQW11SkNZQ2tmMG1CTmk0TndNUzlSUWlzSWVKSGdJbi9nZ0xIczVjOHN3NXJXRDRBdktqQWtld3B6NnpEL0pZT0FDOG8wSUs5NVpsMW1OdXlBZURGQkZxeXh6eXpEdk5hOGtlQVhraUF2dnd3Y0Q3TG5nQUEwSThQWHZOWkxnQzhoQUJqMkgvbnNsd0FBRENPQ0ppSEFBRGdVQ0pnRGtzRmdKY09vQWI3Y1gxTEJRQUFkWWlBMmdRQUFNMklnTG9FQUFCTmlZQ2FCQUFBelltQWVnUUFBRjJJZ0ZvRUFBRGRpSUE2QkFBQVhZbUFHZ1FBQU4ySmdQRUVBQUJEaUlDeDNvKytBSUFWelBxL3d4MDloSDk4L3pidDJzMU9BTnpJQ3dyekd6M3NLdnI0K2V2d2RSRUJZL2dLQUNCY2hlRTdPa0lTQ1FBQVJFQWdBUURBdG0waUlJMEFBT0EzRVpCREFBRHdnZ2pJSUFBQStJc0lXSjhBQU9BaUViQTJBUURBcTBUQXVnUUFBRmVKZ0RVSkFBRGVKQUxXSXdBQXVJa0lXSXNBQU9CbUltQWRBZ0NBWFVUQUdnUUFBTHVKZ1BrSkFBRHVJZ0xtSmdBQXVKc0ltSmNBQU9BaEltQk9BZ0NBaDRtQStRZ0FBQTRoQXVZaUFBQTRqQWlZaHdBQTRGQWlZQTRDQUlERGlZRDZCQUFBVFlpQTJnUUFBTTJJZ0xvRUFBQk5pWUNhQkFBQXpZbUFlZ1FBQUYySWdGb0VBQURkaUlBNkJBQUFYWW1BR2dRQUFOMkpnUEVFQUFCRGlJQ3hCQUFBdzRpQWNRUUFBRU9KZ0RFRUFBRERpWUQrQkFBQUpZaUF2Z1FBQUdXSWdINEVBQUNsaUlBK0JBQUE1WWlBOWdRQUFDV0pnTFlFQUFCbGlZQjJCQUFBcFltQU5nUUFBT1ZWaUlEVkNBQUFwakE2QWxZN0JSQUFBRXhqZEFTc1JBQUFNSldSRWJEU0tZQUFBR0E2VGdJZUp3QUFtSklJZUl3QUFHQmFJdUIrQWdDQXFZbUErd2dBQUtZbkF2WVRBQUFzUVFUc0l3QUFXSVlJdUowQUFHQXBJdUEyQWdBQUFna0FBQWdrQUFBZ2tBQUFnRUFDQUFBQ0NRQUFDQ1FBQUNDUUFBQ0FRQUlBQUFJSkFBQUlKQUFBSUpBQUFJQkFBZ0FBQWdrQUFBZ2tBQUFna0FBQWdFQUNBQUFDQ1FBQUNDUUFBQ0NRQUFDQVFPOUhYd0QxL2ZqK2JmZGY4L0h6MXdaWEFyZTc1NzJGSkFLQUY0N2FOQy85ZlVRQnJSajJzSjhBb052bWVmN1BFUU04eXRDSHh3aUFVS00zVHpIQVBVYS90N0FTQVJDbTRnWjZ1aVlod0dzcXZyY3dPd0VRWW9ZTlZBandweG5lVzVpVkFGamNqQnVvRU1CN0MrMEpnRVhOdUlIK3lZYWF4M3NML2ZpRGdCYTB3aVo2YnJYNzRiTFZudk5xOThONkJNQmlWdDEwVnIwdm5xMzZmRmU5TDliZ0s0QkZKR3cwamxiWDQ3MkZjWndBTENCaEV6MlhkcityU251T2FmZExmUUpnY3FtYlN1cDlyeUwxK2FYZU56VUpnSW1sYnlicDl6K3I5T2VXZnYvVTRUY0FOL0l2YlUyZUN6UDY4ZjJiM3dRd25CTUFnQUhFSzZNSkFJQkJSQUFqQ1FDQWdVUUFvd2dBQUFna0FBQUdjd3JBQ0FJQW9BQVJRRzhDQUtBSUVVQlBBZ0FBQWdrQWdFS2NBdERMMDRkUFgzNk4rQWQ3eVFGZzNQOHAwZ2tBQUFRU0FBQVFTQUFBUUNBQkFBQ0JCQUFBQkJJQUFCQklBQUJBSUFFQUFJRUVBQUFFRWdBQUVFZ0FBRUFnQVFBQWdRUUFBQVFTQUFBUVNBQUFRQ0FCQUFDQkJBQUFCQklBQUJCSUFBQkFJQUVBQUlFRUFBQUVFZ0FBRU9qcHc2Y3Z2MFpmUkxvZjM3ODErM3QvL1B5MTJkKzdOZXRTbStkem1YVmhGazRBQUNDUUFBQ0FRQUlBQUFJSmdNVzEvRDZ5cFZtdm0yUE0rdnhudlc0eUNRQUFDQ1FBQ3ZETDNyNnM5ekdzWTEvV202TUpBQUFJSkFBQ3pQYTk1R3pYU3h1enZRZXpYUzhJQUFBSUpBQkN6UExwWkpicnBJOVozb2RacmhQT0NZQWkvTUNuRCt0OExPdlpoM1dtQlFFUXBQcW5sT3JYeHhqVjM0dnExd2V2RVFCaHFtNVdWYStMR3FxK0gxV3ZDMjRoQUFweHpOZVc5VzNEdXJabGZXbEZBQVNxOXFtbDJ2VlFVN1gzcE5yMXdGNENJRlNWemF2S2RUQ0hLdTlMbGV1QVJ3aUFZbm9lOTQzZXhIcis4eDJqdHVXOWJjTjdTMHZ2UjE4QVk1MDJzNlFOblBsNWIrRnhUZ0FLR2xIOXZUYTNFWnVvVDFGOWVHK1A1YjJsTlNjQS9OYnlVNVZQVDdUaXZZWDdQSDM0OU9YWDZJdmdzdEdienhFYjZncjN3RDRyUFBNVjdnSGU0Z1NBVi8yNUNkNnlLWTNlT01GN0M3ZHhBbENjamVsK1BrV040NzI5bi9lV1h2d0lFQUFDQ1lEaWZCcTRqM1VieS9yZng3clJrd0NZZ0UxaEgrdFZnK2V3ai9XaU53RXdDWnZEYmF4VExaN0hiYXdUSXdnQUFBZ2tBQ2JpVThKMTFxY216K1U2NjhNb0FtQXlOb3ZMckV0dG5zOWwxb1dSQk1DRWJCb3ZXWTg1ZUU0dldROUdFd0NUc25rOHN3NXo4YnllV1FjcUVBQVRTOTlFMHU5L1Z1blBMZjMrcVVNQVRDNTFNMG05NzFXa1ByL1UrNlltQWJDQXRFMGw3WDVYbGZZYzArNlgrdnpQZ0Jhejh2K0V4UWE2THU4dDlPY0VZREdyYmphcjNoZlBWbjIrcTk0WGF4QUFDMXB0MDFudGZyaHN0ZWU4MnYyd0hsOEJMRzdtbzFVYmFDN3ZMYlFuQUVMTXRLSGFRRG54M2tJN0FpQk01UTNWQnNwcnZMZHdQQUVRcXRLR2FnUGxWdDViT0k0QVlNaW1hdlBrVWQ1YmVJd0E0SVdXbTZyTmsxYTh0N0NmQU9CTjkyeXVOazFHODk3Q2RRSUFBQUw1ZzRBQUlKQUFBSUJBQWdBQUFna0FBQWdrQUFBZ2tBQUFnRUFDQUFBQ0NRQUFDQ1FBQUNDUUFBQ0FRQUlBQUFJSkFBQUlKQUFBSUpBQUFJQkE3MzcrKzgvVDZJc0FBUHI1K2U4L1QwNEFBQ0NRQUFDQVFBSUFBQUlKQUFBSUpBQUFJSkFBQUlCQUFnQUFBcjNidHVmL0huRDBoUUFBN1oxbXZoTUFBQWdrQUFBZ2tBQUFnRUFDQUFBQy9RNEFQd1FFZ0xXZHozb25BQUFRU0FBQVFDQUJBQUNCWGdTQTN3RUF3SnIrblBGT0FBQWdrQUFBZ0VBQ0FBQUMvUlVBZmdjQUFHdTVOTnVkQUFCQUlBRUFBSUV1Qm9DdkFRQmdEYS9OZENjQUFCQklBQUJBb0ZjRHdOY0FBREMzYTdQY0NRQUFCQklBQUJEb2FnRDRHZ0FBNXZUV0RIY0NBQUNCM2d3QXB3QUFNSmRiWnJjVEFBQUlKQUFBSU5CTkFlQnJBQUNZdzYwejJ3a0FBQVM2T1FDY0FnQkFiWHRtdFJNQUFBaTBLd0NjQWdCQVRYdG50Qk1BQUFpME93Q2NBZ0JBTGZmTVppY0FBQkRvcmdCd0NnQUFOZHc3azUwQUFFQ2d1d1BBS1FBQWpQWElMSDdvQkVBRUFNQVlqODVnWHdFQVFLQ0hBOEFwQUFEMGRjVHNkUUlBQUlFT0NRQ25BQURReDFFejk3QVRBQkVBQUcwZE9XdDlCUUFBZ1E0TkFLY0FBTkRHMFRQMjhCTUFFUUFBeDJveFc1dDhCU0FDQU9BWXJXYXEzd0FBUUtCbUFlQVVBQUFlMDNLV05qMEJFQUVBY0ovV003VDVWd0FpQUFEMjZURTcvUVlBQUFKMUNRQ25BQUJ3bTE0enM5c0pnQWdBZ090NnpzcXVYd0dJQUFDNHJQZU03UDRiQUJFQUFDK05tSTFEZmdRb0FnRGcyYWlaT095L0FoQUJBS1FiT1F1SC9tZUFJZ0NBVktObjRQQS9CMkQwQWdCQWJ4Vm0zL0FBMkxZYUN3RUFQVlNaZVNVQ1lOdnFMQWdBdEZKcDFwVUpnRzJydFRBQWNLUnFNNjVVQUd4YnZRVUNnRWRWbkczbEFtRGJhaTRVQU55ajZrd3JHUURiVm5mQkFPQldsV2RaMlFEWXR0b0xCd0RYVko5aHBRTmcyK292SUFEOGFZYlpWZjRDejMzNDlPWFg2R3NBZ05mTU1QaFB5cDhBbkp0cFlRSElNdHVNbWlvQXRtMitCUVpnZlRQT3B1a3UrSnl2QkFBWWFjYkJmekxkQ2NDNW1SY2VnTG5OUG9PbURvQnRtLzhCQURDZkZXYlA5RGR3emxjQ0FMUzB3dUEvbWY0RTROeEtEd2FBV2xhYk1VdmR6RG1uQVFBY1liWEJmN0xrVFowVEFnRGNZOVhCZjdMVVZ3Q1hyUDRBQVRoZXd1eFkvZ2JQT1EwQTRKcUV3WDhTYzZQbmhBQUE1NUlHLzBuY0RaOFRBZ0RaRWdmL1NleU5ueE1DQUZtU0IvOUovQUtjRXdJQWF6UDQvMmNoWGlFR0FOWmc2RjltVWQ0Z0JBRG1aUEJmWjNGMkVBTUF0Um42dDdOUWR4SURBRFVZK3ZleGFBY1FBd0I5R2ZxUHM0QU5DQUtBWXhuNHg3T2dIUWdDZ0gwTS9QWXM4Q0NpQU9DWllUK0dSUzlLSUFDck1PQnIrZzlLUzVxZ3pkaXdXZ0FBQUFCSlJVNUVya0pnZ2c9PSIsICJzaXplcyI6ICI1MTJ4NTEyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIiwgInB1cnBvc2UiOiAiYW55IG1hc2thYmxlIn1dfQ==">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAFF0lEQVR4nO3dzXXTWhiGUTnrlkMDtEAHTKiCMqgiEzpICzSQfmBwl1kG/CNZ51fv3uPgmKPv0ZFsJzktg/nw6cvP3s+Bet7fXk+9n8Olrk/GsLMsfaNo/o0NPfe0jqHZNzP4bNEqhOrfxOCzR+0Qqj24waekWiEUf1CDT02lQ3gp+WCGn9pKz1iRmgw+PZTYDXbvAIafXkrM3q4ADD+97Z3BpwMw/Ixizyw+FYDhZzTPzuTmAAw/o3pmNjcFYPgZ3dYZXR2A4WcWW2Z1VQCGn9msndmHARh+ZrVmdot+FAJmczcAZ39m92iGbwZg+DmKe7PsEohoVwNw9udobs20HYBo/wTg7M9RXZttOwDR/gjA2Z+j+3vG7QBE+x2Asz8pLmfdDkA0ARDtZVlc/pDnPPN2AKIJgGgCIJoAiHZyA0wyOwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAET7r9YD//j+rdZDs9PHz1+rHJ+Pn78Wf8zaqvyleMOfbaYQil8CGX5mmoGiAcz0H6euWWbBTTDVzBCBAKhq9AgEQHUjRyAAmhg1gmrvA1wz08tjR/Fo8Eock7XD/eP7t+FmwA7AbluGerSdQAAUMWsEAqCYGSMQAEXNFoEAKG6mCARAFbNEIACqmSECAVDV6BEIgOpGjkAANDFqBAKgmREjEABNjRaBAGhupAgEQBejRCAAuhkhAgHQVe8IBEB3PX9IRgAMYW0EpXcBATCMHjuBABhK6wgEQDQBEE0ARBMA0QRANAEQTQBEa/q7QWtq8TswR9f7V4zMaOoAthzwy689UgyGfp8pA9h70M//fuYQDH4ZUwVQ+qDPGII1KGuam+CaZ7xZzqbWoLwpAmhxcEYfAGtQx/ABtDwoow6ANain6T3ADIs7w3OsbcQ/ZVTL8DsA1CQArkrZCU8fPn35ufaLUxaFuW25fLMDEE0ARBMA0QRANAEQTQBEEwDRNr0P0ELrn+wa8SfJrEE7dgCiCYBo0wVQ8uMYs360wxqUM1wAI11v9nou1qCd4QJYo8RZa/YznzUoY8gA1px19hy8Nf+295nPGrQxZABrPTMARzvrWYN9hnsf4NLWA3XrjFXqcXqwBnVN9XuBHnFmswZbDX0J1OMsNNqZzxrUNXQAy9L2YIx64K1BPcMHsCxtDsroB94a1DFFAMtS9+DMcuCtQXlDvwp0S6kbvZkPujUoY8oAzp4dgiMddGuwz9QBXEr+TPuZNdjuMAHAM6a5CYYaBEA0ARBNAEQTANEEQDQBEO3l/e311PtJQA/vb68nOwDRBEA0ARBNAER7WZb/bwZ6PxFo6TzzdgCiCYBovwNwGUSKy1m3AxDtjwDsAhzd3zNuByDaPwHYBTiqa7NtByDa1QDsAhzNrZm2AxDtZgB2AY7i3izf3QFEwOwezbBLIKI9DMAuwKzWzO6qHUAEzGbtzK6+BBIBs9gyq5vuAUTA6LbO6OabYBEwqmdm86lXgUTAaJ6dyadfBhUBo9gzi7veBxABve2dwd1vhImAXkrMXtHh9ffGaKHkSbfoRyHsBtRWesaqDazdgJJqnVyrn7GFwB61ryqaXbIIgS1aXU43v2YXAve0vo/setMqBpal74snw71qI4pjG+2Vwl9ED9jPaE2QFwAAAABJRU5ErkJggg==">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAFF0lEQVR4nO3dzXXTWhiGUTnrlkMDtEAHTKiCMqgiEzpICzSQfmBwl1kG/CNZ51fv3uPgmKPv0ZFsJzktg/nw6cvP3s+Bet7fXk+9n8Olrk/GsLMsfaNo/o0NPfe0jqHZNzP4bNEqhOrfxOCzR+0Qqj24waekWiEUf1CDT02lQ3gp+WCGn9pKz1iRmgw+PZTYDXbvAIafXkrM3q4ADD+97Z3BpwMw/Ixizyw+FYDhZzTPzuTmAAw/o3pmNjcFYPgZ3dYZXR2A4WcWW2Z1VQCGn9msndmHARh+ZrVmdot+FAJmczcAZ39m92iGbwZg+DmKe7PsEohoVwNw9udobs20HYBo/wTg7M9RXZttOwDR/gjA2Z+j+3vG7QBE+x2Asz8pLmfdDkA0ARDtZVlc/pDnPPN2AKIJgGgCIJoAiHZyA0wyOwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAET7r9YD//j+rdZDs9PHz1+rHJ+Pn78Wf8zaqvyleMOfbaYQil8CGX5mmoGiAcz0H6euWWbBTTDVzBCBAKhq9AgEQHUjRyAAmhg1gmrvA1wz08tjR/Fo8Eock7XD/eP7t+FmwA7AbluGerSdQAAUMWsEAqCYGSMQAEXNFoEAKG6mCARAFbNEIACqmSECAVDV6BEIgOpGjkAANDFqBAKgmREjEABNjRaBAGhupAgEQBejRCAAuhkhAgHQVe8IBEB3PX9IRgAMYW0EpXcBATCMHjuBABhK6wgEQDQBEE0ARBMA0QRANAEQTQBEa/q7QWtq8TswR9f7V4zMaOoAthzwy689UgyGfp8pA9h70M//fuYQDH4ZUwVQ+qDPGII1KGuam+CaZ7xZzqbWoLwpAmhxcEYfAGtQx/ABtDwoow6ANain6T3ADIs7w3OsbcQ/ZVTL8DsA1CQArkrZCU8fPn35ufaLUxaFuW25fLMDEE0ARBMA0QRANAEQTQBEEwDRNr0P0ELrn+wa8SfJrEE7dgCiCYBo0wVQ8uMYs360wxqUM1wAI11v9nou1qCd4QJYo8RZa/YznzUoY8gA1px19hy8Nf+295nPGrQxZABrPTMARzvrWYN9hnsf4NLWA3XrjFXqcXqwBnVN9XuBHnFmswZbDX0J1OMsNNqZzxrUNXQAy9L2YIx64K1BPcMHsCxtDsroB94a1DFFAMtS9+DMcuCtQXlDvwp0S6kbvZkPujUoY8oAzp4dgiMddGuwz9QBXEr+TPuZNdjuMAHAM6a5CYYaBEA0ARBNAEQTANEEQDQBEO3l/e311PtJQA/vb68nOwDRBEA0ARBNAER7WZb/bwZ6PxFo6TzzdgCiCYBovwNwGUSKy1m3AxDtjwDsAhzd3zNuByDaPwHYBTiqa7NtByDa1QDsAhzNrZm2AxDtZgB2AY7i3izf3QFEwOwezbBLIKI9DMAuwKzWzO6qHUAEzGbtzK6+BBIBs9gyq5vuAUTA6LbO6OabYBEwqmdm86lXgUTAaJ6dyadfBhUBo9gzi7veBxABve2dwd1vhImAXkrMXtHh9ffGaKHkSbfoRyHsBtRWesaqDazdgJJqnVyrn7GFwB61ryqaXbIIgS1aXU43v2YXAve0vo/setMqBpal74snw71qI4pjG+2Vwl9ED9jPaE2QFwAAAABJRU5ErkJggg==">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Il Mio Berlingo">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#2C4A5E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F1EA;
+  --surface:#FFFFFF;
+  --surface-alt:#EAE5D9;
+  --ink:#242B2E;
+  --ink-soft:#68717A;
+  --ink-faint:#9AA0A6;
+  --primary:#2C4A5E;
+  --primary-dark:#1D323F;
+  --primary-soft:#DCE6E9;
+  --accent:#BE5A2E;
+  --accent-soft:#F3E0D0;
+  --good:#4C7A5E;
+  --good-soft:#DEEAE1;
+  --warn:#B4842A;
+  --warn-soft:#F3E7CE;
+  --danger:#B3452F;
+  --danger-soft:#F3DBD2;
+  --line:#DCD6C8;
+  --radius:14px;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'IBM Plex Sans',sans-serif;
+  -webkit-font-smoothing:antialiased;
+  padding-bottom:84px;
+  min-height:100vh;
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size:28px 28px;
+  background-attachment:fixed;
+  background-position:-1px -1px;
+}
+.app{max-width:760px;margin:0 auto;padding:0 16px;}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif;margin:0;letter-spacing:-0.01em;}
+.icon{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}
+
+/* Header */
+header.top{
+  padding:22px 16px 18px;
+  display:flex;align-items:center;gap:14px;
+}
+.van-badge{
+  width:56px;height:56px;border-radius:12px;
+  background:var(--primary);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 3px 0 var(--primary-dark);
+  flex-shrink:0;
+}
+.van-badge .icon{width:34px;height:34px;stroke:#F3F1EA;stroke-width:1.6;}
+header.top h1{font-size:22px;color:var(--primary-dark);}
+header.top p{margin:2px 0 0;color:var(--ink-soft);font-size:13px;}
+
+/* Nav */
+nav.tabs{
+  display:flex;
+  gap:6px;
+  padding:0 16px 14px;
+  max-width:760px;margin:0 auto;
+  overflow-x:auto;
+}
+nav.tabs button{
+  font-family:'Space Grotesk',sans-serif;
+  font-weight:600;font-size:13.5px;
+  border:1px solid var(--line);
+  background:var(--surface);
+  color:var(--ink-soft);
+  padding:9px 14px;
+  border-radius:999px;
+  cursor:pointer;
+  white-space:nowrap;
+  transition:all .15s ease;
+}
+nav.tabs button.active{
+  background:var(--primary);
+  border-color:var(--primary);
+  color:#fff;
+}
+
+main{padding:4px 0 30px;}
+.view{display:none;animation:fade .25s ease;}
+.view.active{display:block;}
+@keyframes fade{from{opacity:0;transform:translateY(4px);}to{opacity:1;transform:translateY(0);}}
+
+/* Cards */
+.card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:18px;
+  margin-bottom:14px;
+}
+.card h3{font-size:15px;color:var(--primary-dark);display:flex;align-items:center;gap:8px;margin-bottom:2px;}
+.card h3 .icon{width:18px;height:18px;stroke:var(--accent);}
+
+/* Dashboard stat grid */
+.stat-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;
+  margin-bottom:14px;
+}
+.stat{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:16px 14px;
+}
+.stat .label{font-size:11.5px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.06em;font-weight:500;}
+.stat .value{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:24px;font-weight:600;color:var(--primary-dark);
+  margin-top:6px;
+}
+.stat .unit{font-size:12px;color:var(--ink-faint);font-weight:400;margin-left:2px;}
+
+/* Badges */
+.badge{
+  display:inline-flex;align-items:center;gap:5px;
+  font-size:12px;font-weight:600;
+  padding:4px 10px;border-radius:999px;
+  font-family:'IBM Plex Sans',sans-serif;
+}
+.badge.good{background:var(--good-soft);color:var(--good);}
+.badge.warn{background:var(--warn-soft);color:var(--warn);}
+.badge.danger{background:var(--danger-soft);color:var(--danger);}
+.badge.neutral{background:var(--surface-alt);color:var(--ink-soft);}
+.badge .icon{width:12px;height:12px;stroke-width:2.4;}
+
+/* Scadenza row */
+.scad-row{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:12px 0;border-bottom:1px solid var(--line);
+  gap:10px;
+}
+.scad-row:last-child{border-bottom:none;padding-bottom:0;}
+.scad-info{display:flex;align-items:center;gap:10px;min-width:0;}
+.scad-info .icon{width:20px;height:20px;stroke:var(--primary);flex-shrink:0;}
+.scad-text .name{font-weight:600;font-size:14px;}
+.scad-text .sub{font-size:12.5px;color:var(--ink-soft);}
+
+.empty{
+  text-align:center;padding:26px 10px;color:var(--ink-faint);font-size:13.5px;
+}
+.empty .icon{width:30px;height:30px;stroke:var(--ink-faint);margin-bottom:8px;}
+
+/* Forms */
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px;}
+.form-grid .full{grid-column:1/-1;}
+label{font-size:12px;color:var(--ink-soft);font-weight:500;display:block;margin-bottom:4px;}
+input,select,textarea{
+  width:100%;
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:14.5px;
+  padding:9px 10px;
+  border:1px solid var(--line);
+  border-radius:8px;
+  background:var(--bg);
+  color:var(--ink);
+}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--primary);outline-offset:1px;}
+textarea{resize:vertical;min-height:44px;}
+.btn{
+  font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:13.5px;
+  border:none;border-radius:9px;padding:10px 16px;
+  cursor:pointer;display:inline-flex;align-items:center;gap:6px;
+  transition:opacity .15s;
+}
+.btn:active{opacity:.8;}
+.btn-primary{background:var(--primary);color:#fff;}
+.btn-accent{background:var(--accent);color:#fff;}
+.btn-ghost{background:var(--surface-alt);color:var(--ink);}
+.btn-full{width:100%;justify-content:center;margin-top:14px;}
+.btn .icon{width:16px;height:16px;stroke-width:2.4;}
+
+/* List entries */
+.entry{
+  border:1px solid var(--line);border-radius:11px;
+  padding:12px 14px;margin-top:10px;
+  display:flex;justify-content:space-between;gap:10px;align-items:flex-start;
+}
+.entry .main{min-width:0;}
+.entry .title{font-weight:600;font-size:14px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.entry .meta{font-size:12.5px;color:var(--ink-soft);margin-top:3px;line-height:1.5;}
+.entry .cost{font-family:'IBM Plex Mono',monospace;font-weight:600;color:var(--primary-dark);white-space:nowrap;}
+.entry .del{
+  background:none;border:none;cursor:pointer;color:var(--ink-faint);padding:4px;
+  flex-shrink:0;
+}
+.entry .del:hover{color:var(--danger);}
+.entry .del .icon{width:17px;height:17px;}
+
+.section-title{
+  display:flex;align-items:center;gap:8px;margin:22px 0 4px;
+  color:var(--primary-dark);
+}
+.section-title .icon{stroke:var(--accent);width:19px;height:19px;}
+.section-title h2{font-size:16px;}
+.section-title:first-of-type{margin-top:2px;}
+
+.two-col-fiscali{display:grid;}
+.fiscale-block{padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid var(--line);}
+.fiscale-block:last-child{padding-bottom:0;margin-bottom:0;border-bottom:none;}
+
+.tag{
+  font-size:11px;font-weight:600;padding:2px 8px;border-radius:6px;
+  background:var(--primary-soft);color:var(--primary-dark);
+}
+.tag.straord{background:var(--accent-soft);color:var(--accent);}
+
+/* Bottom nav mobile */
+@media (max-width:600px){
+  nav.tabs{
+    position:fixed;bottom:0;left:0;right:0;
+    background:var(--surface);border-top:1px solid var(--line);
+    padding:10px 10px calc(10px + env(safe-area-inset-bottom));
+    justify-content:space-between;overflow-x:visible;
+    z-index:20;
+  }
+  nav.tabs button{flex:1;text-align:center;padding:9px 6px;font-size:12px;}
+  body{padding-bottom:78px;}
+}
+@media (min-width:601px){
+  .form-grid{grid-template-columns:1fr 1fr 1fr;}
+}
+
+.loading-msg{text-align:center;color:var(--ink-faint);padding:30px;font-size:13.5px;}
+.toast{
+  position:fixed;bottom:96px;left:50%;transform:translateX(-50%);
+  background:var(--primary-dark);color:#fff;padding:10px 18px;border-radius:999px;
+  font-size:13px;font-weight:500;box-shadow:0 4px 14px rgba(0,0,0,.2);
+  opacity:0;pointer-events:none;transition:opacity .25s, transform .25s;
+  z-index:40;
+}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(-6px);}
+</style>
+</head>
+<body>
+
+<div class="app">
+  <header class="top">
+    <div class="van-badge">
+  <svg class="icon" viewBox="0 0 54 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 54px; height: 48px;">
+    <!-- Il Suppostone XL: muso appuntito e grandissimo sbalzo posteriore -->
+    <path d="M 6,33.5 C 4,31 4,14 9,14 L 36,14 C 43,14 49,20 51,26.5 C 52,29.5 50.5,33.5 45,33.5 L 6,33.5 Z" />
+    
+    <!-- Le Ruote (con posteriore avanzata per creare lo sbalzo) -->
+    <circle cx="19" cy="33.5" r="4.5" fill="currentColor" />
+    <circle cx="36" cy="33.5" r="4.5" fill="currentColor" />
+  </svg>
+</div>
+
+    <div>
+      <h1>Il SUPPOSTONE</h1>
+      <p>Rifornimenti, manutenzioni e scadenze sotto controllo</p>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button class="active" data-view="dashboard">Dashboard</button>
+    <button data-view="rifornimenti">Rifornimenti</button>
+    <button data-view="manutenzioni">Manutenzioni</button>
+    <button data-view="scadenze">Scadenze</button>
+  </nav>
+
+  <main id="main">
+    <div class="loading-msg" id="loadingMsg">Carico i dati salvati…</div>
+
+    <!-- DASHBOARD -->
+    <section class="view" id="view-dashboard">
+      <div class="stat-grid">
+        <div class="stat">
+          <div class="label">Consumo medio</div>
+          <div class="value" id="statConsumo">—<span class="unit">km/l</span></div>
+          <div id="statConsumoBreakdown" style="font-size:11.5px;color:var(--ink-soft);margin-top:4px;"></div>
+        </div>
+        <div class="stat">
+          <div class="label">Costo per km</div>
+          <div class="value" id="statCostoKm">—<span class="unit">€/km</span></div>
+        </div>
+        <div class="stat">
+          <div class="label">Km attuali</div>
+          <div class="value" id="statKm">—<span class="unit">km</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>
+          <svg class="icon" viewBox="0 0 24 24"><path d="M3 22V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16"/><path d="M3 12h10"/><path d="M15 8h2l3 3v7a1 1 0 0 1-1 1h-1"/><circle cx="17.5" cy="18.5" r="1.5"/><path d="M13 22H2"/></svg>
+          Carburante
+        </h3>
+        <div class="stat-grid" style="margin-top:12px;margin-bottom:0;">
+          <div class="stat" style="padding:12px;">
+            <div class="label">Spesa mese</div>
+            <div class="value" id="statSpesaMese" style="font-size:19px;">—<span class="unit">€</span></div>
+          </div>
+          <div class="stat" style="padding:12px;">
+            <div class="label">Spesa anno</div>
+            <div class="value" id="statSpesaAnno" style="font-size:19px;">—<span class="unit">€</span></div>
+          </div>
+          <div class="stat" style="padding:12px;">
+            <div class="label">Prezzo medio anno</div>
+            <div class="value" id="statPrezzoMedioAnno" style="font-size:19px;">—<span class="unit">€/L</span></div>
+          </div>
+          <div class="stat" style="padding:12px;">
+            <div class="label">Litri anno</div>
+            <div class="value" id="statLitriAnno" style="font-size:19px;">—<span class="unit">L</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="3"/></svg>
+          Prossime scadenze
+        </h3>
+        <div id="dashboardScadenze"></div>
+      </div>
+
+      <div class="card">
+        <h3>
+          <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>
+          Backup
+        </h3>
+        <p style="font-size:13px;color:var(--ink-soft);margin:6px 0 12px;line-height:1.5;">I dati restano salvati in questo browser/telefono. Scarica un backup ogni tanto per non perderli mai — puoi anche salvarlo su Google Drive dal menu "Condividi" del tuo telefono dopo averlo scaricato.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <button id="btnDownloadBackup" class="btn btn-ghost" style="flex:1;justify-content:center;min-width:130px;">Scarica backup (JSON)</button>
+          <button id="btnRestoreBackup" class="btn btn-ghost" style="flex:1;justify-content:center;min-width:130px;">Ripristina backup</button>
+          <input type="file" id="inputRestoreBackup" accept="application/json" style="display:none;">
+        </div>
+        <button id="btnDownloadCSV" class="btn btn-accent btn-full">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M8 2v4M16 2v4M4 10h16"/></svg>
+          Scarica riepilogo leggibile (CSV per Excel/Sheets)
+        </button>
+      </div>
+    </section>
+
+    <!-- RIFORNIMENTI -->
+    <section class="view" id="view-rifornimenti">
+      <div class="card">
+        <h3>
+          <svg class="icon" viewBox="0 0 24 24"><path d="M3 22V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16"/><path d="M3 12h10"/><path d="M15 8h2l3 3v7a1 1 0 0 1-1 1h-1"/><circle cx="17.5" cy="18.5" r="1.5"/><path d="M13 22H2"/></svg>
+          Nuovo rifornimento
+        </h3>
+        <form id="formRifornimento">
+          <div class="form-grid">
+            <div><label>Data</label><input type="date" name="data" required></div>
+            <div><label>Km attuali</label><input type="number" name="km" placeholder="es. 85400" required></div>
+            <div><label>Luogo</label><input type="text" name="luogo" placeholder="es. Arezzo"></div>
+            <div><label>Marca / distributore</label><input type="text" name="marca" placeholder="es. Eni"></div>
+            <div><label>Litri</label><input type="number" step="0.01" name="litri" required></div>
+            <div><label>Prezzo al litro (€)</label><input type="number" step="0.001" name="prezzoLitro"></div>
+            <div class="full"><label>Costo totale (€)</label><input type="number" step="0.01" name="costo"></div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+            Aggiungi rifornimento
+          </button>
+        </form>
+      </div>
+
+      <div class="section-title">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M8 2v4M16 2v4M4 10h16"/></svg>
+        <h2>Storico</h2>
+      </div>
+      <div id="listaRifornimenti"></div>
+    </section>
+
+    <!-- MANUTENZIONI -->
+    <section class="view" id="view-manutenzioni">
+
+      <div class="section-title">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4l-6 6a1.5 1.5 0 0 0 2 2l6-6a4 4 0 0 0 5.4-5.4l-2.5 2.5-2-2z"/></svg>
+        <h2>Tagliandi</h2>
+      </div>
+      <div class="card">
+        <form id="formTagliando">
+          <div class="form-grid">
+            <div><label>Data</label><input type="date" name="data" required></div>
+            <div><label>Km</label><input type="number" name="km" required></div>
+            <div><label>Officina</label><input type="text" name="officina"></div>
+            <div><label>Costo (€)</label><input type="number" step="0.01" name="costo"></div>
+            <div><label>Prossimo tagliando (data)</label><input type="date" name="prossimaData"></div>
+            <div><label>Prossimo tagliando (km)</label><input type="number" name="prossimoKm"></div>
+            <div class="full"><label>Note</label><textarea name="note"></textarea></div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+            Aggiungi tagliando
+          </button>
+        </form>
+      </div>
+      <div id="listaTagliandi"></div>
+
+      <div class="section-title">
+        <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg>
+        <h2>Gomme</h2>
+      </div>
+      <p style="font-size:12.5px;color:var(--ink-soft);margin:0 0 10px;line-height:1.5;">Promemoria cambio fisso: 15 aprile (estive) e 15 novembre (invernali). I km si sommano automaticamente anche se rimonti lo stesso treno in stagioni diverse.</p>
+      <div id="gommeSlots"></div>
+
+      <div class="section-title">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M8 2v4M16 2v4M4 10h16"/></svg>
+        <h2>Storico montaggi</h2>
+      </div>
+      <div id="listaGomme"></div>
+
+      <div class="section-title">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4l-6 6a1.5 1.5 0 0 0 2 2l6-6a4 4 0 0 0 5.4-5.4l-2.5 2.5-2-2z"/></svg>
+        <h2>Altre manutenzioni</h2>
+      </div>
+      <div class="card">
+        <form id="formExtra">
+          <div class="form-grid">
+            <div><label>Data</label><input type="date" name="data" required></div>
+            <div><label>Km</label><input type="number" name="km" required></div>
+            <div>
+              <label>Tipo</label>
+              <select name="tipo"><option value="Ordinaria">Ordinaria</option><option value="Straordinaria">Straordinaria</option></select>
+            </div>
+            <div><label>Costo (€)</label><input type="number" step="0.01" name="costo"></div>
+            <div class="full"><label>Descrizione</label><textarea name="descrizione" placeholder="es. sostituzione batteria"></textarea></div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+            Aggiungi intervento
+          </button>
+        </form>
+      </div>
+      <div id="listaExtra"></div>
+    </section>
+
+    <!-- SCADENZE FISCALI -->
+    <section class="view" id="view-scadenze">
+      <div class="card two-col-fiscali" id="cardScadenzeFiscali"></div>
+    </section>
+
+  </main>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const ICONS = {
+  fuel: '<svg class="icon" viewBox="0 0 24 24"><path d="M3 22V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16"/><path d="M3 12h10"/><path d="M15 8h2l3 3v7a1 1 0 0 1-1 1h-1"/><circle cx="17.5" cy="18.5" r="1.5"/><path d="M13 22H2"/></svg>',
+  wrench: '<svg class="icon" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4l-6 6a1.5 1.5 0 0 0 2 2l6-6a4 4 0 0 0 5.4-5.4l-2.5 2.5-2-2z"/></svg>',
+  tire: '<svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg>',
+  calendar: '<svg class="icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>',
+  shield: '<svg class="icon" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6z"/></svg>',
+  disc: '<svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.4"/></svg>',
+  check: '<svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>',
+  alert: '<svg class="icon" viewBox="0 0 24 24"><path d="M12 2 22 20H2z"/><path d="M12 9v5M12 17h.01"/></svg>',
+  ok: '<svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>',
+  trash: '<svg class="icon" viewBox="0 0 24 24"><path d="M3 6h18M8 6V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2m-9 0 1 14a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1l1-14"/></svg>',
+  empty: '<svg class="icon" viewBox="0 0 24 24"><path d="M3 22V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16"/><path d="M3 12h10"/></svg>',
+  cloud: '<svg class="icon" viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.6-7.96A5 5 0 0 1 16 9a3.5 3.5 0 0 1 1 6.9"/><path d="M12 12v7M9 16l3-3 3 3"/></svg>'
+};
+
+const DEFAULT_GOMME_CONFIG = { attivo: null, slots: { estivo: {marca:'', modello:''}, invernale: {marca:'', modello:''} } };
+let DATA = { rifornimenti: [], manutenzioni: { tagliandi: [], gomme: [], extra: [], gommeConfig: JSON.parse(JSON.stringify(DEFAULT_GOMME_CONFIG)) }, scadenze: { bollo:{scadenza:''}, assicurazione:{scadenza:'',compagnia:'',premio:null}, revisione:{scadenza:''} } };
+
+function uid(){ return Date.now().toString(36) + Math.random().toString(36).slice(2,7); }
+function fmtEuro(n){ return (n||0).toLocaleString('it-IT',{minimumFractionDigits:2,maximumFractionDigits:2}) + ' €'; }
+function fmtDate(d){ if(!d) return '—'; const [y,m,da]=d.split('-'); return `${da}/${m}/${y}`; }
+function fmtKm(n){ return n!=null ? Number(n).toLocaleString('it-IT') : '—'; }
+
+function showToast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'), 1800);
+}
+
+const STORAGE_PREFIX = 'ilmioberlingo:';
+
+async function loadData(){
+  try{
+    const r = localStorage.getItem(STORAGE_PREFIX+'rifornimenti');
+    const m = localStorage.getItem(STORAGE_PREFIX+'manutenzioni');
+    const s = localStorage.getItem(STORAGE_PREFIX+'scadenze');
+    if(r) DATA.rifornimenti = JSON.parse(r);
+    if(m) {
+      const parsedM = JSON.parse(m);
+      DATA.manutenzioni = Object.assign({tagliandi:[],gomme:[],extra:[]}, parsedM);
+      DATA.manutenzioni.gommeConfig = Object.assign(
+        JSON.parse(JSON.stringify(DEFAULT_GOMME_CONFIG)),
+        parsedM.gommeConfig || {},
+        { slots: Object.assign({estivo:{marca:'',modello:''},invernale:{marca:'',modello:''}}, (parsedM.gommeConfig&&parsedM.gommeConfig.slots)||{}) }
+      );
+    }
+    if(s) DATA.scadenze = Object.assign({bollo:{scadenza:''},assicurazione:{scadenza:'',compagnia:'',premio:null},revisione:{scadenza:''}}, JSON.parse(s));
+  }catch(e){
+    console.error('Errore caricamento dati', e);
+  }
+  document.getElementById('loadingMsg').style.display = 'none';
+  renderAll();
+}
+
+async function saveRifornimenti(){
+  try{ localStorage.setItem(STORAGE_PREFIX+'rifornimenti', JSON.stringify(DATA.rifornimenti)); }
+  catch(e){ console.error(e); showToast('Errore nel salvataggio'); }
+}
+async function saveManutenzioni(){
+  try{ localStorage.setItem(STORAGE_PREFIX+'manutenzioni', JSON.stringify(DATA.manutenzioni)); }
+  catch(e){ console.error(e); showToast('Errore nel salvataggio'); }
+}
+async function saveScadenze(){
+  try{ localStorage.setItem(STORAGE_PREFIX+'scadenze', JSON.stringify(DATA.scadenze)); }
+  catch(e){ console.error(e); showToast('Errore nel salvataggio'); }
+}
+
+function downloadBackup(){
+  const blob = new Blob([JSON.stringify(DATA, null, 2)], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'berlingo-backup-' + new Date().toISOString().slice(0,10) + '.json';
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+  showToast('Backup scaricato');
+}
+
+function restoreBackup(file){
+  const reader = new FileReader();
+  reader.onload = async (e)=>{
+    try{
+      const parsed = JSON.parse(e.target.result);
+      if(!parsed || !Array.isArray(parsed.rifornimenti)) throw new Error('formato non valido');
+      DATA.rifornimenti = parsed.rifornimenti || [];
+      DATA.manutenzioni = Object.assign({tagliandi:[],gomme:[],extra:[]}, parsed.manutenzioni || {});
+      DATA.manutenzioni.gommeConfig = Object.assign(
+        JSON.parse(JSON.stringify(DEFAULT_GOMME_CONFIG)),
+        (parsed.manutenzioni&&parsed.manutenzioni.gommeConfig) || {},
+        { slots: Object.assign({estivo:{marca:'',modello:''},invernale:{marca:'',modello:''}}, (parsed.manutenzioni&&parsed.manutenzioni.gommeConfig&&parsed.manutenzioni.gommeConfig.slots)||{}) }
+      );
+      DATA.scadenze = Object.assign({bollo:{scadenza:''},assicurazione:{scadenza:'',compagnia:'',premio:null},revisione:{scadenza:''}}, parsed.scadenze || {});
+      await saveRifornimenti(); await saveManutenzioni(); await saveScadenze();
+      renderAll();
+      showToast('Backup ripristinato');
+    }catch(err){
+      console.error(err);
+      showToast('File di backup non valido');
+    }
+  };
+  reader.readAsText(file);
+}
+
+/* ---------- Navigation ---------- */
+document.querySelectorAll('nav.tabs button').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('nav.tabs button').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('view-'+btn.dataset.view).classList.add('active');
+  });
+});
+document.getElementById('view-dashboard').classList.add('active');
+
+/* ---------- Helpers: km attuali & consumo ---------- */
+function getLatestKm(){
+  const all = [
+    ...DATA.rifornimenti.map(x=>({km:Number(x.km), data:x.data})),
+    ...DATA.manutenzioni.tagliandi.map(x=>({km:Number(x.km), data:x.data})),
+    ...DATA.manutenzioni.gomme.map(x=>({km:Number(x.km), data:x.data})),
+    ...DATA.manutenzioni.extra.map(x=>({km:Number(x.km), data:x.data})),
+  ].filter(x=>!isNaN(x.km));
+  if(!all.length) return null;
+  return Math.max(...all.map(x=>x.km));
+}
+
+function computeConsumo(){
+  const rif = [...DATA.rifornimenti].filter(r=>r.km!=null && r.litri!=null).sort((a,b)=>Number(a.km)-Number(b.km));
+  if(rif.length < 2) return null;
+  let sumKm = 0, sumLitri = 0, sumCosto = 0;
+  for(let i=1;i<rif.length;i++){
+    const kmSeg = Number(rif[i].km) - Number(rif[i-1].km);
+    if(kmSeg <= 0) continue;
+    sumKm += kmSeg;
+    sumLitri += Number(rif[i].litri);
+    sumCosto += Number(rif[i].costo || (rif[i].litri*rif[i].prezzoLitro) || 0);
+  }
+  if(sumLitri === 0 || sumKm === 0) return null;
+  return { consumoKmL: sumKm/sumLitri, costoKm: sumCosto/sumKm };
+}
+
+/* ---------- Treni di gomme ---------- */
+function computeTreniGomme(){
+  const items = [...DATA.manutenzioni.gomme].filter(g=>g.km!=null).sort((a,b)=>Number(a.km)-Number(b.km));
+  const latestKm = getLatestKm();
+  const sets = {};
+  items.forEach((g,i)=>{
+    const nextKm = (i+1 < items.length) ? Number(items[i+1].km) : (latestKm!=null?latestKm:Number(g.km));
+    const delta = Math.max(0, nextKm - Number(g.km));
+    const key = [g.tipo||'', g.marca||'', g.modello||''].join('|');
+    if(!sets[key]) sets[key] = { tipo:g.tipo, marca:g.marca, modello:g.modello, km:0, montaggi:0 };
+    sets[key].km += delta;
+    sets[key].montaggi += 1;
+  });
+  return Object.values(sets).sort((a,b)=> b.km-a.km);
+}
+
+function getTipoGommeAtKm(km){
+  const relevant = DATA.manutenzioni.gomme.filter(g=>g.km!=null && Number(g.km) <= km).sort((a,b)=> Number(b.km)-Number(a.km));
+  return relevant.length ? relevant[0].tipo : null;
+}
+
+function computeConsumoPerTipoGomme(){
+  const rif = [...DATA.rifornimenti].filter(r=>r.km!=null && r.litri!=null).sort((a,b)=>Number(a.km)-Number(b.km));
+  const acc = {};
+  for(let i=1;i<rif.length;i++){
+    const kmSeg = Number(rif[i].km)-Number(rif[i-1].km);
+    if(kmSeg<=0) continue;
+    const tipo = getTipoGommeAtKm(Number(rif[i].km)) || 'Non specificato';
+    if(!acc[tipo]) acc[tipo] = {km:0, litri:0};
+    acc[tipo].km += kmSeg;
+    acc[tipo].litri += Number(rif[i].litri);
+  }
+  const out = {};
+  Object.keys(acc).forEach(t=>{ if(acc[t].litri>0) out[t] = acc[t].km/acc[t].litri; });
+  return out;
+}
+
+/* ---------- Render: Slot Gomme (Estivo/Invernale) ---------- */
+function tipoLabel(slot){ return slot==='estivo' ? 'Estive' : 'Invernali'; }
+
+function renderGommeSlots(){
+  const box = document.getElementById('gommeSlots');
+  const cfg = DATA.manutenzioni.gommeConfig;
+  const latestKm = getLatestKm();
+  const treni = computeTreniGomme();
+  const oggi = new Date().toISOString().slice(0,10);
+
+  box.innerHTML = ['estivo','invernale'].map(slot=>{
+    const info = cfg.slots[slot] || {marca:'',modello:''};
+    const tipo = tipoLabel(slot);
+    const attivo = cfg.attivo === slot;
+    const match = treni.find(t=> t.tipo===tipo && (t.marca||'')===(info.marca||'') && (t.modello||'')===(info.modello||''));
+    const kmTotali = match ? Math.round(match.km) : 0;
+    const eventiSlot = DATA.manutenzioni.gomme.filter(g=>g.tipo===tipo && (g.marca||'')===(info.marca||'') && (g.modello||'')===(info.modello||'')).sort((a,b)=>Number(b.km)-Number(a.km));
+    const ultimo = eventiSlot[0];
+
+    return `
+      <div class="card">
+        <h3>${ICONS.tire}Treno ${slot==='estivo'?'Estivo':'Invernale'}<span class="badge ${attivo?'good':'neutral'}" style="margin-left:auto;">${attivo?'Montato':'Smontato'}</span></h3>
+        <div class="form-grid" style="margin-top:10px;">
+          <div><label>Marca</label><input type="text" id="marca-${slot}" value="${info.marca||''}" placeholder="es. Michelin"></div>
+          <div><label>Modello</label><input type="text" id="modello-${slot}" value="${info.modello||''}" placeholder="es. Agilis 3"></div>
+        </div>
+        <button class="btn btn-ghost" data-saveslot="${slot}" style="margin-top:8px;">Salva marca/modello</button>
+
+        <div class="meta" style="margin-top:14px;">${ultimo ? `Ultimo montaggio: ${fmtDate(ultimo.data)} a ${fmtKm(ultimo.km)} km` : 'Nessun montaggio registrato'}</div>
+        <div style="margin-top:2px;font-weight:600;color:var(--primary-dark);font-family:'IBM Plex Mono',monospace;">${fmtKm(kmTotali)} km percorsi totali</div>
+
+        <div class="form-grid" style="margin-top:14px;">
+          <div><label>Data montaggio</label><input type="date" id="data-monta-${slot}" value="${oggi}"></div>
+          <div><label>Km al montaggio</label><input type="number" id="km-monta-${slot}" value="${latestKm!=null?latestKm:''}"></div>
+        </div>
+        <button class="btn btn-primary btn-full" data-montaslot="${slot}" ${attivo?'disabled':''}>${attivo ? 'Già montato' : 'Monta questo treno ora'}</button>
+
+        <details style="margin-top:12px;">
+          <summary style="cursor:pointer;font-size:12.5px;color:var(--ink-soft);font-weight:600;">Sostituisci con treno nuovo</summary>
+          <div class="form-grid">
+            <div><label>Nuova marca</label><input type="text" id="nuova-marca-${slot}" placeholder="es. Continental"></div>
+            <div><label>Nuovo modello</label><input type="text" id="nuovo-modello-${slot}" placeholder="es. VanContact"></div>
+            <div><label>Data montaggio</label><input type="date" id="nuova-data-${slot}" value="${oggi}"></div>
+            <div><label>Km al montaggio</label><input type="number" id="nuovo-km-${slot}" value="${latestKm!=null?latestKm:''}"></div>
+            <div class="full"><label>Costo (€)</label><input type="number" step="0.01" id="nuovo-costo-${slot}"></div>
+          </div>
+          <button class="btn btn-accent btn-full" data-sostituisci="${slot}">Sostituisci e monta</button>
+        </details>
+      </div>
+    `;
+  }).join('');
+
+  box.querySelectorAll('[data-saveslot]').forEach(btn=>{
+    btn.addEventListener('click', async ()=>{
+      const slot = btn.dataset.saveslot;
+      cfg.slots[slot] = {
+        marca: document.getElementById('marca-'+slot).value,
+        modello: document.getElementById('modello-'+slot).value
+      };
+      await saveManutenzioni();
+      showToast('Treno aggiornato');
+      renderAll();
+    });
+  });
+
+  box.querySelectorAll('[data-montaslot]').forEach(btn=>{
+    btn.addEventListener('click', async ()=>{
+      const slot = btn.dataset.montaslot;
+      const data = document.getElementById('data-monta-'+slot).value;
+      const km = parseFloat(document.getElementById('km-monta-'+slot).value);
+      if(!data || isNaN(km)){ showToast('Inserisci data e km validi'); return; }
+      const info = cfg.slots[slot] || {marca:'',modello:''};
+      DATA.manutenzioni.gomme.push({ id: uid(), data, km, tipo: tipoLabel(slot), marca: info.marca, modello: info.modello, costo: null });
+      cfg.attivo = slot;
+      await saveManutenzioni();
+      showToast('Treno montato');
+      renderAll();
+    });
+  });
+
+  box.querySelectorAll('[data-sostituisci]').forEach(btn=>{
+    btn.addEventListener('click', async ()=>{
+      const slot = btn.dataset.sostituisci;
+      const marca = document.getElementById('nuova-marca-'+slot).value;
+      const modello = document.getElementById('nuovo-modello-'+slot).value;
+      const data = document.getElementById('nuova-data-'+slot).value;
+      const km = parseFloat(document.getElementById('nuovo-km-'+slot).value);
+      const costo = document.getElementById('nuovo-costo-'+slot).value;
+      if(!data || isNaN(km)){ showToast('Inserisci data e km validi'); return; }
+      cfg.slots[slot] = { marca, modello };
+      DATA.manutenzioni.gomme.push({ id: uid(), data, km, tipo: tipoLabel(slot), marca, modello, costo: costo?parseFloat(costo):null });
+      cfg.attivo = slot;
+      await saveManutenzioni();
+      showToast('Nuovo treno registrato e montato');
+      renderAll();
+    });
+  });
+}
+
+/* ---------- Scadenze aggregation ---------- */
+function daysUntil(dateStr){
+  if(!dateStr) return null;
+  const today = new Date(); today.setHours(0,0,0,0);
+  const d = new Date(dateStr); d.setHours(0,0,0,0);
+  return Math.round((d-today)/86400000);
+}
+
+function statusFromDays(days){
+  if(days == null) return null;
+  if(days < 0) return 'danger';
+  if(days <= 30) return 'warn';
+  return 'good';
+}
+function statusLabel(days, isKm){
+  if(days == null) return '';
+  if(isKm){
+    if(days < 0) return `Superato di ${fmtKm(Math.abs(days))} km`;
+    if(days === 0) return 'Da fare ora';
+    return `Tra ${fmtKm(days)} km`;
+  }
+  if(days < 0) return `Scaduto da ${Math.abs(days)} giorni`;
+  if(days === 0) return 'Scade oggi';
+  return `Tra ${days} giorni`;
+}
+
+function nextOccurrence(month, day){
+  const now = new Date(); now.setHours(0,0,0,0);
+  let d = new Date(now.getFullYear(), month-1, day);
+  if(d < now) d = new Date(now.getFullYear()+1, month-1, day);
+  return d;
+}
+function daysUntilDate(d){
+  const today = new Date(); today.setHours(0,0,0,0);
+  return Math.round((d-today)/86400000);
+}
+
+function collectScadenze(){
+  const items = [];
+  const latestKm = getLatestKm();
+
+  const fiscaliMeta = {
+    bollo: { label: 'Bollo', icon: ICONS.calendar },
+    assicurazione: { label: 'Assicurazione', icon: ICONS.shield },
+    revisione: { label: 'Revisione', icon: ICONS.disc },
+  };
+  Object.keys(fiscaliMeta).forEach(k=>{
+    const scad = DATA.scadenze[k] && DATA.scadenze[k].scadenza;
+    if(scad){
+      const d = daysUntil(scad);
+      items.push({ label: fiscaliMeta[k].label, icon: fiscaliMeta[k].icon, status: statusFromDays(d), sortKey: d, text: statusLabel(d,false) });
+    }
+  });
+
+  DATA.manutenzioni.tagliandi.forEach(t=>{
+    if(t.prossimaData){
+      const d = daysUntil(t.prossimaData);
+      items.push({ label: 'Tagliando', icon: ICONS.wrench, status: statusFromDays(d), sortKey: d, text: statusLabel(d,false) });
+    }
+    if(t.prossimoKm && latestKm != null){
+      const rem = Number(t.prossimoKm) - latestKm;
+      items.push({ label: 'Tagliando (km)', icon: ICONS.wrench, status: statusFromDays(rem<=1000?(rem<0?-1:rem<=0?0:rem/50):999), sortKey: rem, text: statusLabel(rem, true) });
+    }
+  });
+
+  const prossimaEstiva = nextOccurrence(4,15);
+  const prossimaInvernale = nextOccurrence(11,15);
+  const dEstiva = daysUntilDate(prossimaEstiva);
+  const dInvernale = daysUntilDate(prossimaInvernale);
+  items.push({ label: 'Cambio gomme estive (15 apr)', icon: ICONS.tire, status: statusFromDays(dEstiva), sortKey: dEstiva, text: statusLabel(dEstiva,false) });
+  items.push({ label: 'Cambio gomme invernali (15 nov)', icon: ICONS.tire, status: statusFromDays(dInvernale), sortKey: dInvernale, text: statusLabel(dInvernale,false) });
+
+  items.sort((a,b)=> (a.sortKey ?? 99999) - (b.sortKey ?? 99999));
+  return items;
+}
+
+/* ---------- Render: Dashboard ---------- */
+function renderCarburante(){
+  const now = new Date();
+  const speseMese = DATA.rifornimenti.filter(r=>{
+    if(!r.data) return false;
+    const d = new Date(r.data);
+    return d.getMonth()===now.getMonth() && d.getFullYear()===now.getFullYear();
+  }).reduce((s,r)=> s + Number(r.costo||0), 0);
+  document.getElementById('statSpesaMese').innerHTML = speseMese.toFixed(2)+'<span class="unit">€</span>';
+
+  const rifAnno = DATA.rifornimenti.filter(r=> r.data && new Date(r.data).getFullYear()===now.getFullYear());
+  const speseAnno = rifAnno.reduce((s,r)=> s + Number(r.costo||0), 0);
+  document.getElementById('statSpesaAnno').innerHTML = speseAnno.toFixed(2)+'<span class="unit">€</span>';
+
+  const conPrezzo = rifAnno.filter(r=>r.prezzoLitro!=null);
+  const prezzoMedio = conPrezzo.length ? conPrezzo.reduce((s,r)=>s+Number(r.prezzoLitro),0)/conPrezzo.length : null;
+  document.getElementById('statPrezzoMedioAnno').innerHTML = prezzoMedio!=null ? prezzoMedio.toFixed(3)+'<span class="unit">€/L</span>' : '—<span class="unit">€/L</span>';
+
+  const litriAnno = rifAnno.reduce((s,r)=> s + Number(r.litri||0), 0);
+  document.getElementById('statLitriAnno').innerHTML = litriAnno.toFixed(1)+'<span class="unit">L</span>';
+}
+
+function renderDashboard(){
+  const c = computeConsumo();
+  document.getElementById('statConsumo').innerHTML = c ? c.consumoKmL.toFixed(1)+'<span class="unit">km/l</span>' : '—<span class="unit">km/l</span>';
+  document.getElementById('statCostoKm').innerHTML = c ? c.costoKm.toFixed(3)+'<span class="unit">€/km</span>' : '—<span class="unit">€/km</span>';
+  const latestKm = getLatestKm();
+  document.getElementById('statKm').innerHTML = (latestKm!=null?fmtKm(latestKm):'—')+'<span class="unit">km</span>';
+
+  const perTipo = computeConsumoPerTipoGomme();
+  const rilevanti = ['Estive','Invernali'].filter(t=>perTipo[t]!=null);
+  document.getElementById('statConsumoBreakdown').textContent = rilevanti.length 
+  ? rilevanti.map(t=>`${t}: ${perTipo[t].toFixed(1)} km/l`).join(' · ') 
+  : '';
+
+  renderCarburante();
+
+  const items = collectScadenze();
+  const box = document.getElementById('dashboardScadenze');
+  if(!items.length){
+    box.innerHTML = `<div class="empty">${ICONS.empty}<div>Nessuna scadenza impostata.<br>Aggiungile nella sezione Scadenze o Manutenzioni.</div></div>`;
+    return;
+  }
+  box.innerHTML = items.map(it=>`
+    <div class="scad-row">
+      <div class="scad-info">
+        ${it.icon}
+        <div class="scad-text">
+          <div class="name">${it.label}</div>
+          <div class="sub">${it.text}</div>
+        </div>
+      </div>
+      <span class="badge ${it.status}">${it.status==='good'?ICONS.ok:ICONS.alert} ${it.status==='good'?'OK':it.status==='warn'?'In arrivo':'Scaduto'}</span>
+    </div>
+  `).join('');
+}
+
+/* ---------- Render: Rifornimenti ---------- */
+function renderRifornimenti(){
+  const list = document.getElementById('listaRifornimenti');
+  const items = [...DATA.rifornimenti].sort((a,b)=> new Date(b.data)-new Date(a.data));
+  if(!items.length){
+    list.innerHTML = `<div class="empty">${ICONS.empty}<div>Ancora nessun rifornimento registrato.</div></div>`;
+    return;
+  }
+  list.innerHTML = items.map(r=>`
+    <div class="entry">
+      <div class="main">
+        <div class="title">${fmtDate(r.data)} ${r.marca?`· ${r.marca}`:''}</div>
+        <div class="meta">${r.luogo?r.luogo+' · ':''}${r.litri} L a ${r.prezzoLitro?Number(r.prezzoLitro).toFixed(3)+' €/L':'—'} · ${fmtKm(r.km)} km</div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;">
+        <span class="cost">${fmtEuro(r.costo)}</span>
+        <button class="del" data-id="${r.id}" data-kind="rifornimenti">${ICONS.trash}</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+/* ---------- Render: Manutenzioni ---------- */
+function renderManutenzioni(){
+  const t = document.getElementById('listaTagliandi');
+  const tItems = [...DATA.manutenzioni.tagliandi].sort((a,b)=> new Date(b.data)-new Date(a.data));
+  t.innerHTML = tItems.length ? tItems.map(x=>`
+    <div class="entry">
+      <div class="main">
+        <div class="title">${fmtDate(x.data)} ${x.officina?'· '+x.officina:''}</div>
+        <div class="meta">${fmtKm(x.km)} km${x.prossimaData?' · prossimo: '+fmtDate(x.prossimaData):''}${x.prossimoKm?' ('+fmtKm(x.prossimoKm)+' km)':''}${x.note?' · '+x.note:''}</div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;">
+        <span class="cost">${fmtEuro(x.costo)}</span>
+        <button class="del" data-id="${x.id}" data-kind="tagliandi">${ICONS.trash}</button>
+      </div>
+    </div>
+  `).join('') : `<div class="empty">${ICONS.empty}<div>Nessun tagliando registrato.</div></div>`;
+
+  renderGommeSlots();
+
+  const g = document.getElementById('listaGomme');
+  const gItems = [...DATA.manutenzioni.gomme].sort((a,b)=> new Date(b.data)-new Date(a.data));
+  g.innerHTML = gItems.length ? gItems.map(x=>`
+    <div class="entry">
+      <div class="main">
+        <div class="title">${fmtDate(x.data)} · ${x.tipo}${(x.marca||x.modello)?' · '+[x.marca,x.modello].filter(Boolean).join(' '):''}</div>
+        <div class="meta">Montate a ${fmtKm(x.km)} km</div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;">
+        ${x.costo?`<span class="cost">${fmtEuro(x.costo)}</span>`:''}
+        <button class="del" data-id="${x.id}" data-kind="gomme">${ICONS.trash}</button>
+      </div>
+    </div>
+  `).join('') : `<div class="empty">${ICONS.empty}<div>Nessun montaggio registrato.</div></div>`;
+
+  const e = document.getElementById('listaExtra');
+  const eItems = [...DATA.manutenzioni.extra].sort((a,b)=> new Date(b.data)-new Date(a.data));
+  e.innerHTML = eItems.length ? eItems.map(x=>`
+    <div class="entry">
+      <div class="main">
+        <div class="title">${fmtDate(x.data)} <span class="tag ${x.tipo==='Straordinaria'?'straord':''}">${x.tipo}</span></div>
+        <div class="meta">${fmtKm(x.km)} km${x.descrizione?' · '+x.descrizione:''}</div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;">
+        <span class="cost">${fmtEuro(x.costo)}</span>
+        <button class="del" data-id="${x.id}" data-kind="extra">${ICONS.trash}</button>
+      </div>
+    </div>
+  `).join('') : `<div class="empty">${ICONS.empty}<div>Nessun intervento registrato.</div></div>`;
+}
+
+/* ---------- Render: Scadenze fiscali ---------- */
+function renderScadenze(){
+  const meta = [
+    { key:'bollo', label:'Bollo', icon: ICONS.calendar },
+    { key:'assicurazione', label:'Assicurazione', icon: ICONS.shield },
+    { key:'revisione', label:'Revisione', icon: ICONS.disc },
+  ];
+  const box = document.getElementById('cardScadenzeFiscali');
+  box.innerHTML = meta.map(m=>{
+    const scad = (DATA.scadenze[m.key] && DATA.scadenze[m.key].scadenza) || '';
+    const d = daysUntil(scad);
+    const status = statusFromDays(d);
+    const isAssicurazione = m.key === 'assicurazione';
+    const compagnia = isAssicurazione ? ((DATA.scadenze.assicurazione && DATA.scadenze.assicurazione.compagnia) || '') : '';
+    const premio = isAssicurazione ? ((DATA.scadenze.assicurazione && DATA.scadenze.assicurazione.premio) ?? '') : '';
+    return `
+      <div class="fiscale-block">
+        <h3>${m.icon} ${m.label}</h3>
+        ${scad ? `<div style="margin:6px 0 10px;"><span class="badge ${status}">${status==='good'?ICONS.ok:ICONS.alert} ${statusLabel(d,false)}</span></div>` : `<div class="meta" style="color:var(--ink-faint);font-size:13px;margin:6px 0 10px;">Nessuna scadenza impostata</div>`}
+        ${isAssicurazione && (compagnia || premio!=='') ? `<div class="meta" style="margin-bottom:8px;">${compagnia?compagnia:''}${(compagnia && premio!=='')?' · ':''}${premio!==''?'Premio: '+fmtEuro(premio)+'/anno':''}</div>` : ''}
+        <div class="form-grid" style="margin-top:0;">
+          <div><label>Data scadenza</label><input type="date" id="input-${m.key}" value="${scad}"></div>
+          ${isAssicurazione ? `
+            <div><label>Compagnia</label><input type="text" id="input-compagnia" value="${compagnia}" placeholder="es. Generali"></div>
+            <div><label>Premio annuo (€)</label><input type="number" step="0.01" id="input-premio" value="${premio}"></div>
+          ` : ''}
+        </div>
+        <button class="btn btn-accent btn-full" data-savekey="${m.key}">Salva</button>
+      </div>
+    `;
+  }).join('');
+
+  box.querySelectorAll('[data-savekey]').forEach(btn=>{
+    btn.addEventListener('click', async ()=>{
+      const key = btn.dataset.savekey;
+      const val = document.getElementById('input-'+key).value;
+      if(key === 'assicurazione'){
+        const compagnia = document.getElementById('input-compagnia').value;
+        const premioVal = document.getElementById('input-premio').value;
+        DATA.scadenze[key] = { scadenza: val, compagnia, premio: premioVal?parseFloat(premioVal):null };
+      } else {
+        DATA.scadenze[key] = { scadenza: val };
+      }
+      await saveScadenze();
+      showToast('Scadenza aggiornata');
+      renderScadenze();
+      renderDashboard();
+    });
+  });
+}
+
+function renderAll(){
+  renderDashboard();
+  renderRifornimenti();
+  renderManutenzioni();
+  renderScadenze();
+}
+
+/* ---------- Delete handling (event delegation) ---------- */
+document.getElementById('main').addEventListener('click', async (e)=>{
+  const btn = e.target.closest('.del');
+  if(!btn) return;
+  const { id, kind } = btn.dataset;
+  if(!confirm('Eliminare questa voce?')) return;
+  if(kind === 'rifornimenti'){
+    DATA.rifornimenti = DATA.rifornimenti.filter(x=>x.id!==id);
+    await saveRifornimenti();
+  } else {
+    DATA.manutenzioni[kind] = DATA.manutenzioni[kind].filter(x=>x.id!==id);
+    await saveManutenzioni();
+  }
+  showToast('Voce eliminata');
+  renderAll();
+});
+
+/* ---------- Forms ---------- */
+document.getElementById('formRifornimento').addEventListener('submit', async (e)=>{
+  e.preventDefault();
+  const fd = new FormData(e.target);
+  const litri = parseFloat(fd.get('litri'));
+  let prezzoLitro = fd.get('prezzoLitro') ? parseFloat(fd.get('prezzoLitro')) : null;
+  let costo = fd.get('costo') ? parseFloat(fd.get('costo')) : null;
+  if(costo == null && prezzoLitro != null) costo = +(litri*prezzoLitro).toFixed(2);
+  if(prezzoLitro == null && costo != null && litri) prezzoLitro = +(costo/litri).toFixed(3);
+  const entry = {
+    id: uid(), data: fd.get('data'), km: parseFloat(fd.get('km')),
+    luogo: fd.get('luogo'), marca: fd.get('marca'),
+    litri, prezzoLitro, costo
+  };
+  DATA.rifornimenti.push(entry);
+  await saveRifornimenti();
+  e.target.reset();
+  showToast('Rifornimento aggiunto');
+  renderAll();
+});
+
+document.getElementById('formTagliando').addEventListener('submit', async (e)=>{
+  e.preventDefault();
+  const fd = new FormData(e.target);
+  const entry = {
+    id: uid(), data: fd.get('data'), km: parseFloat(fd.get('km')),
+    officina: fd.get('officina'), costo: fd.get('costo')?parseFloat(fd.get('costo')):null,
+    prossimaData: fd.get('prossimaData') || null,
+    prossimoKm: fd.get('prossimoKm') ? parseFloat(fd.get('prossimoKm')) : null,
+    note: fd.get('note')
+  };
+  DATA.manutenzioni.tagliandi.push(entry);
+  await saveManutenzioni();
+  e.target.reset();
+  showToast('Tagliando aggiunto');
+  renderAll();
+});
+
+document.getElementById('formExtra').addEventListener('submit', async (e)=>{
+  e.preventDefault();
+  const fd = new FormData(e.target);
+  const entry = {
+    id: uid(), data: fd.get('data'), km: parseFloat(fd.get('km')),
+    tipo: fd.get('tipo'), costo: fd.get('costo')?parseFloat(fd.get('costo')):null,
+    descrizione: fd.get('descrizione')
+  };
+  DATA.manutenzioni.extra.push(entry);
+  await saveManutenzioni();
+  e.target.reset();
+  showToast('Intervento aggiunto');
+  renderAll();
+});
+
+/* ---------- Export su Google Drive ---------- */
+function csvEscape(v){
+  v = (v==null?'':String(v));
+  if(/[",\n;]/.test(v)) v = '"'+v.replace(/"/g,'""')+'"';
+  return v;
+}
+function buildCSV(){
+  const lines = [];
+  lines.push('IL MIO BERLINGO - Export dati (' + new Date().toLocaleDateString('it-IT') + ')');
+  lines.push('');
+  lines.push('RIFORNIMENTI');
+  lines.push(['Data','Luogo','Marca','Litri','Prezzo/L','Costo €','Km'].join(','));
+  [...DATA.rifornimenti].sort((a,b)=>new Date(a.data)-new Date(b.data)).forEach(r=>{
+    lines.push([r.data,r.luogo,r.marca,r.litri,r.prezzoLitro,r.costo,r.km].map(csvEscape).join(','));
+  });
+  lines.push('');
+  lines.push('TAGLIANDI');
+  lines.push(['Data','Km','Officina','Costo €','Prossima data','Prossimo km','Note'].join(','));
+  DATA.manutenzioni.tagliandi.forEach(t=>{
+    lines.push([t.data,t.km,t.officina,t.costo,t.prossimaData,t.prossimoKm,t.note].map(csvEscape).join(','));
+  });
+  lines.push('');
+  lines.push('GOMME - STORICO MONTAGGI');
+  lines.push(['Data','Km','Tipo','Marca','Modello','Costo €'].join(','));
+  DATA.manutenzioni.gomme.forEach(g=>{
+    lines.push([g.data,g.km,g.tipo,g.marca,g.modello,g.costo].map(csvEscape).join(','));
+  });
+  lines.push('');
+  lines.push('KM PER TRENO DI GOMME');
+  lines.push(['Tipo','Marca','Modello','Km percorsi stimati'].join(','));
+  computeTreniGomme().forEach(t=>{
+    lines.push([t.tipo,t.marca,t.modello,Math.round(t.km)].map(csvEscape).join(','));
+  });
+  lines.push('');
+  lines.push('ALTRE MANUTENZIONI');
+  lines.push(['Data','Km','Tipo','Costo €','Descrizione'].join(','));
+  DATA.manutenzioni.extra.forEach(x=>{
+    lines.push([x.data,x.km,x.tipo,x.costo,x.descrizione].map(csvEscape).join(','));
+  });
+  lines.push('');
+  lines.push('SCADENZE FISCALI');
+  lines.push(['Tipo','Scadenza','Compagnia','Premio annuo €'].join(','));
+  ['bollo','assicurazione','revisione'].forEach(k=>{
+    const s = DATA.scadenze[k] || {};
+    lines.push([k, s.scadenza||'', s.compagnia||'', s.premio!=null?s.premio:''].map(csvEscape).join(','));
+  });
+  return lines.join('\n');
+}
+
+function downloadCSV(){
+  const csv = buildCSV();
+  const blob = new Blob(["\uFEFF"+csv], {type:'text/csv;charset=utf-8;'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'berlingo-riepilogo-' + new Date().toISOString().slice(0,10) + '.csv';
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+  showToast('Riepilogo scaricato');
+}
+document.getElementById('btnDownloadCSV').addEventListener('click', downloadCSV);
+
+document.getElementById('btnDownloadBackup').addEventListener('click', downloadBackup);
+document.getElementById('btnRestoreBackup').addEventListener('click', ()=> document.getElementById('inputRestoreBackup').click());
+document.getElementById('inputRestoreBackup').addEventListener('change', (e)=>{
+  const file = e.target.files[0];
+  if(file){
+    if(confirm('Ripristinare questo backup sovrascriverà i dati attuali. Continuare?')) restoreBackup(file);
+  }
+  e.target.value = '';
+});
+
+loadData();
+</script>
+</body>
+</html>
